@@ -69,7 +69,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G        &kp PSCRN                        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp LEFT_SHIFT                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANGUAGE_1  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                               &kp F1        &kp F2  &kp F3  &kp F4  &kp F5
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans      &kp F13          &kp F6        &kp F7  &kp F8  &kp F9  &kp F10
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &kp RIGHT_SHIFT  &kp LEFT_ALT  &trans  &trans  &trans  &kp F11
-&trans     &trans     &trans     &trans     &trans     &trans      &trans           &trans                                &kp F12
+&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                       &kp F1   &kp F2  &kp F3           &kp F4         &kp F5
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans      &kp F11  &kp F6   &kp F7  &kp F8           &kp F9         &kp F10
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &kp F12  &kp F13  &trans  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans
+&trans     &trans     &trans     &trans     &trans     &trans      &trans   &trans                                           &trans
             >;
         };
 
@@ -96,10 +96,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp PG_UP                              &kp LC(Y)       &kp LC(U)  &kp LC(I)  &kp LC(O)     &kp LC(P)
-&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END    &kp LEFT_ALT        &trans  &kp LC(H)       &kp LC(J)  &kp LC(K)  &kp LC(L)     &kp RIGHT_SHIFT
-&kp LS(Z)   &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp PG_DN  &kp LEFT_SHIFT      &trans  &kp LC(N)       &kp LC(M)  &kp LCTRL  &kp LEFT_ALT  &trans
-&trans      &trans                  &trans          &trans                   &trans     &trans              &trans  &kp LEFT_SHIFT                                      &trans
+&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW      &kp LC(TAB)      &kp PG_UP                                         &kp LC(Y)  &kp LC(U)  &kp LC(I)        &kp LC(O)      &kp LC(P)
+&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp END    &kp LEFT_ALT        &kp LC(MINUS)      &kp LC(H)  &kp LC(J)  &kp LC(K)        &kp LC(L)      &kp LC(SQT)
+&kp LS(Z)   &kp LG(LEFT)     &kp LS(LG(LEFT))  &kp LG(RIGHT)    &kp PG_DN  &kp LEFT_SHIFT      &kp LC(SEMICOLON)  &kp LC(N)  &kp LC(M)  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp LC(SLASH)
+&trans      &trans           &trans            &trans           &trans     &trans              &trans             &kp LCTRL                                             &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
